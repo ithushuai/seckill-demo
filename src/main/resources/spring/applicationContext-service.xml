@@ -28,7 +28,7 @@ http://www.springframework.org/schema/context/spring-context.xsd">
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.hushuai.seckill.mapper"/>
     </bean>
-    <context:component-scan base-package="com.hushuai.seckill.service, com.hushuai.seckill.thread"/>
+    <context:component-scan base-package="com.hushuai.seckill.service, com.hushuai.seckill.thread, com.hushuai.seckill.config"/>
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"/>
     </bean>
